@@ -17,27 +17,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;600;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/common/aos.css">
   <!-- 내가 만든 css -->
   <link rel="stylesheet" href="index.css">
 
   <script src="asset/common/jquery-3.6.0.min.js"></script>
   <script src="asset/common/jquery-ui.min.js"></script>
+  <script src="asset/common/aos.js"></script>
   <script src="index.js"></script>
 </head>
 <body>
 
-
   <div class="center">
-    <h1><span>S</span><span>e</span><span>o</span><span>y</span><span>o</span><span>u</span><span>n</span><span>g</span></h1>
+    <h1 data-aos="zoom-in"><span>S</span><span>e</span><span>o</span><span>y</span><span>o</span><span>u</span><span>n</span><span>g</span></h1>
   </div>
 
 
 <div class="container">
-  <div class="aside left_pofol">
-    <div class="left_top">
+  <div class="aside left_pofol" data-aos="fade-left" data-aos-delay="300">
+    <div class="left_top"  data-aos="fade-left" data-aos-delay="600">
       <h2>A letter of self-introduction<br>from Young</h2>
     </div>
-    <div class="left_bottom">
+    <div class="left_bottom" data-aos="fade-left" data-aos-delay="900">
         <ol id="keyword">
           <li>Keyword</li>
           <li># 밝고 긍정적인 에너지</li>
@@ -51,12 +52,12 @@
     </div>
   </div>
 
-  <div class="article right_pofol">
-    <div class="right_txt">
+  <div class="article right_pofol" data-aos="fade-left-center" data-aos-delay="1200">
+    <div class="right_txt"  data-aos="fade-left" data-aos-delay="1500">
       <p>My portfolio</p>
     </div>
     <div class="main_1"> 
-      <div class="about">
+      <div class="about" data-aos="fade-up" data-aos-delay="2000">
         <h2>ABOUT ME</h2>
       
       <ul>
@@ -129,7 +130,9 @@
       <ul>
         <li>
           <div>
-            <a href="https://reactive-website.netlify.app" target="_blank" class="website"></a>
+            <a href="https://reactive-website.netlify.app" target="_blank" class="website">
+              <video src="asset/images/video.webm" preload autoplay muted loop width="300px" height="650px"></video>
+            </a>
         </div>
           <h5>View more</h5>
           <h3>반응형 홈페이지</h3>
@@ -164,11 +167,12 @@
       <li>
         <p>
           <strong>'의약품 검색'</strong> 이라는 기존 어플<br> <strong> 앱 리디자인</strong>
-          <br><a href="asset/files/Prototype.XD" class="XD_file">XD 보러가기</a>
-          <br> <em>Team Project 보고서 파일 확인 가능 →</em>   
+          <br><a href="https://xd.adobe.com/view/f1ca39ad-e668-4d69-9f0e-c7eb00d7c639-a499/?fullscreen&hints=off" target="_blank" class="XD_file">프로토타입</a>
+          <br><a href="asset/files/teamproject.pdf" target="_blank" class="second">프로젝트 보고서</a>
+          <br><a href="asset/files/ENDfile.pdf" target="_blank" class="end">프로젝트 완료 보고서</a>
         </p>
       </li>
-      <li><a href="asset/files/teamproject.pdf" target="blank"><img src="asset/images/phone.png" alt="사진"></a></li>
+      <li><img src="asset/images/phone.png" alt="사진"></li>
     </ul>
   </div>
   </div>
@@ -178,9 +182,13 @@
       <img src="asset/images/handheart.png" alt="손가락하트">
       <h2>Contact Me</h2>
       <p></p>
-      <h4>dragon8916@naver.com</h4>
+      <a href="mailto:dragon8916@naver.com">dragon8916@naver.com</a>
     </div>
   </div>
 </div>
+
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

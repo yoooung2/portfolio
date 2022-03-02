@@ -6,20 +6,9 @@ ul{list-style: none;}
 img{vertical-align: top;}
 .container{display: flex;}
 
-.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem;  font-family: 'Roboto'; z-index: 99;}
-.center h1 span { transition: 0.4s ease-in-out; font-weight:700 }
-.center h1 span:nth-child(1) { transition-delay:0; }
-.center h1 span:nth-child(2) { transition-delay:0.2s; }
-.center h1 span:nth-child(3) { transition-delay:0.4s; }
-.center h1 span:nth-child(4) { transition-delay:0.6s; }
-.center h1 span:nth-child(5) { transition-delay:0.8s; }
-.center h1 span:nth-child(6) { transition-delay:1s; }
-.center h1 span:nth-child(7) { transition-delay:1.2s; }
-.center h1 span:nth-child(8) { transition-delay:1.4s; }
-.center h1.on span { font-weight: 100;}
-
+.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem;  font-family: 'Roboto'; z-index: 99; }
 .container .aside{ width: 50%; height: 100vh; font-family: 'Roboto', sans-serif; position: fixed;}
-.aside .left_top{font-size: 1.8rem; position: absolute; top: 100px; left: 50px;}
+.aside .left_top{font-size: 1.8rem; position: absolute; top: 100px; left: 50px; transition: 1s;}
 .aside .left_bottom{ font-size: 1rem; position: absolute; bottom: 100px; left: 50px;}
 .aside .left_bottom #keyword li{margin-bottom: 10px; font-family: 'Hamlet'; line-height: 1.5;}
 .aside .left_bottom #keyword li:first-child{ font-size: 1.8rem; font-weight: bold; margin-bottom: 20px;}
@@ -29,7 +18,7 @@ img{vertical-align: top;}
 
 
 
-.container .article{width: 50%; margin-left: 50%;}
+.container .article{width: 50%; margin-left: 50%; overflow: hidden;}
 .article .right_txt{position: fixed; top: 80px; right: -60px; font-family: 'Roboto'; letter-spacing: 1px; z-index: 99;}
 .article .right_txt p{ width:200px; position: relative; transform: rotate(-90deg); color: #ddd;}
 .article .right_txt p::before { content: ""; width:50px; height:1px; background-color: #ddd; display: inline-block; vertical-align: middle; margin-right: 10px;}
@@ -74,7 +63,7 @@ img{vertical-align: top;}
 .article .main_3 ul li{color:whitesmoke; }
 .article .main_3 ul li h5{text-align: left; margin: 0; margin-top: 10px; }
 .article .main_3 ul li h3{margin: 0 auto; font-size: 1.7rem; color: white;}
-.article .main_3 ul li p{margin: 30px auto; font-size: 1.2rem; line-height: 1.4;}
+.article .main_3 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4;}
 .article .main_3 ul li:first-child{margin-bottom: 80px;}
 
 .article .main_3 ul li .glueon{width:700px; height: 400px; background: url(asset/images/glueon.png) no-repeat 50% / cover; display: inline-block; box-shadow:
@@ -88,15 +77,15 @@ img{vertical-align: top;}
 
 
 /*main_6 work2*/
-.article .main_6{background-color: #DBC4A0; height: 110vh;  position: relative; text-align: right;}
+.article .main_6{background-color: #DBC4A0; height: 120vh;  position: relative; text-align: right;}
 .article .main_6 .work2{position: absolute; top: 50%; left:50%;  transform: translate(-50%, -50%);z-index: 999;} 
-.article .main_6 .work2 h2{width:700px; position: relative; font-size: 2.5rem; border-bottom: 2px solid rgb(0, 0, 0); margin: 0; }
+.article .main_6 .work2 h2{width:700px; position: relative; font-size: 2.5rem; border-bottom: 2px solid rgb(0, 0, 0); margin: 80px 0 20px; }
 .article .main_6 ul{  margin-top: 50px; }
-.article .main_6 ul li h5{ text-align: center;margin: 0; margin-top: -20px; margin-left: -10px;}
+.article .main_6 ul li h5{ text-align: center;margin: 0; margin-top: -20px; margin-left: -20px;}
 .article .main_6 ul li h3{margin: 0 auto; font-size: 1.7rem; padding-top: 25px;}
-.article .main_6 ul li p{margin: 30px auto; font-size: 1.2rem; line-height: 1.4;}
+.article .main_6 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4;}
 .article .main_6 ul li:first-child{margin-bottom: 80px;}
-.article .main_6 ul li .website{width: 314px; height:600px; background: url(asset/images/website2-3.png) no-repeat 50% 0/ cover; display: inline-block;box-shadow:
+.article .main_6 ul li .website{width: 300px; height:650px; /*background: url(asset/images/website2-3.png) no-repeat 50% 0/ cover;*/ display: inline-block;box-shadow:
   1.9px 0.6px 4.6px rgba(0, 0, 0, 0.031),
   4.6px 1.4px 11px rgba(0, 0, 0, 0.044),
   8.6px 2.6px 20.8px rgba(0, 0, 0, 0.055),
@@ -119,7 +108,9 @@ img{vertical-align: top;}
 .article .main_4 ul li:first-child{font-size: 1.1rem; text-align: right; margin-right: 30px; margin-top: 80px; line-height: 1.5;}
 .article .main_4 ul li:first-child strong{ font-size: 1.8rem;}
 .article .main_4 ul li:last-child{width: 280px; height: 520px;}
-.article .main_4 ul li:first-child a{display:inline-block; color: white; text-decoration: none; background-color: black; padding: 5px 10px; margin:20px auto;}
+.article .main_4 ul li:first-child a{display:inline-block; color: white; text-decoration: none; background-color: black; padding: 5px 10px; margin:30px auto 10px; font-weight: 600;}
+.article .main_4 ul li:first-child .second{margin: 10px auto;}
+.article .main_4 ul li:first-child .end{margin: 10px auto;}
 .article .main_4 ul li:first-child a:hover{background-color: rgba(0, 0, 0, 0.5);}
 .article .main_4 ul li em{display: block; margin-top:230px;}
 
@@ -130,3 +121,6 @@ img{vertical-align: top;}
 .article .main_5 .contact h2{margin: 50px auto; font-size: 3rem; font-weight: 700; }
 .article .main_5 .contact h4{display: block; font-size: 1.2rem; font-weight: 400;}
 .article .main_5 .contact p::before{content: ""; width:80px; height:2px; background-color: #fff;display:block; transform: rotate(90deg); margin: 60px auto;}
+.article .main_5 .contact a{color: black; text-decoration: none;}
+.article .main_5 .contact a:hover{color: rgb(0, 0, 0,0.5);}
+
