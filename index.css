@@ -4,9 +4,9 @@ body *{ margin: 0; padding: 0; font-family:'Roboto', 'Hamlet', 'Franklin Gothic 
 ol{list-style: none;}
 ul{list-style: none;}
 img{vertical-align: top;}
-.container{display: flex;}
 
-.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem;  font-family: 'Roboto'; z-index: 99; }
+
+.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem;  font-family: 'Roboto'; z-index: 99;}
 .container .aside{ width: 50%; height: 100vh; font-family: 'Roboto', sans-serif; position: fixed;}
 .aside .left_top{font-size: 1.8rem; position: absolute; top: 100px; left: 50px; transition: 1s;}
 .aside .left_bottom{ font-size: 1rem; position: absolute; bottom: 100px; left: 50px;}
@@ -18,15 +18,16 @@ img{vertical-align: top;}
 
 
 
-.container .article{width: 50%; margin-left: 50%; overflow: hidden;}
-.article .right_txt{position: fixed; top: 80px; right: -60px; font-family: 'Roboto'; letter-spacing: 1px; z-index: 99;}
-.article .right_txt p{ width:200px; position: relative; transform: rotate(-90deg); color: #ddd;}
-.article .right_txt p::before { content: ""; width:50px; height:1px; background-color: #ddd; display: inline-block; vertical-align: middle; margin-right: 10px;}
+.container .article{width: 50%; margin-left: 50%;}
+.container .right_pofol{overflow: hidden;}
+.right_txt{position: fixed; top: 80px; right: -60px; font-family: 'Roboto'; letter-spacing: 1px; z-index: 999;}
+.right_txt p{ width:200px; position: relative; transform: rotate(-90deg); color: #ddd;}
+.right_txt p::before { content: ""; width:50px; height:1px; background-color: #ddd; display: inline-block; vertical-align: middle; margin-right: 10px;}
 
 /* main_1 */
 .article .main_1{background-color: #b29492; height: 130vh; position: relative;}
 
-.article .main_1 .about{ position: absolute; top: 65%; left:50%;  transform: translate(-50%, -50%); z-index: 999; }
+.article .main_1 .about{ position: absolute; top: 65%; left:50%;  transform: translate(-50%, -50%); z-index: 999;}
 .article .main_1 .about h2{width:700px; position: relative; font-size: 2.5rem; text-align: right;  border-bottom: 2px solid black;}
 
 .article .main_1 .about ul{display: flex; justify-content: right; margin-top: 100px; }
