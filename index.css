@@ -1,16 +1,29 @@
 @charset "utf-8";
 
-body *{ margin: 0; padding: 0; font-family:'Roboto', 'Hamlet', 'Franklin Gothic Medium' , sans-serif;}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('asset/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-Bold';
+  src: url('asset/fonts/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body *{ margin: 0; padding: 0; font-family:'Pretendard','맑은 고딕', sans-serif; }
 ol{list-style: none;}
 ul{list-style: none;}
 img{vertical-align: top;}
 
 
-.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem;  font-family: 'Roboto'; z-index: 99;}
-.container .aside{ width: 50%; height: 100vh; font-family: 'Roboto', sans-serif; position: fixed;}
+.center{position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3.5rem; z-index: 99;}
+.container .aside{ width: 50%; height: 100vh;  position: fixed;}
 .aside .left_top{font-size: 1.8rem; position: absolute; top: 100px; left: 50px; transition: 1s;}
 .aside .left_bottom{ font-size: 1rem; position: absolute; bottom: 100px; left: 50px;}
-.aside .left_bottom #keyword li{margin-bottom: 10px; font-family: 'Hamlet'; line-height: 1.5;}
+.aside .left_bottom #keyword li{margin-bottom: 10px; line-height: 1.5;}
 .aside .left_bottom #keyword li:first-child{ font-size: 1.8rem; font-weight: bold; margin-bottom: 20px;}
 .aside .left_since{position: absolute; top: 60px; right: -60px; }
 .aside .left_since p{ width:200px; position: relative; transform: rotate(-90deg);}
@@ -20,7 +33,7 @@ img{vertical-align: top;}
 
 .container .article{width: 50%; margin-left: 50%;}
 .container .right_pofol{overflow: hidden;}
-.right_txt{position: fixed; top: 80px; right: -60px; font-family: 'Roboto'; letter-spacing: 1px; z-index: 999;}
+.right_txt{position: fixed; top: 80px; right: -60px; letter-spacing: 1px; z-index: 999;}
 .right_txt p{ width:200px; position: relative; transform: rotate(-90deg); color: #ddd;}
 .right_txt p::before { content: ""; width:50px; height:1px; background-color: #ddd; display: inline-block; vertical-align: middle; margin-right: 10px;}
 
@@ -32,7 +45,7 @@ img{vertical-align: top;}
 
 .article .main_1 .about ul{display: flex; justify-content: right; margin-top: 100px; }
 .article .main_1 .about ul li img{width: 400px; height: 400px; margin-right: 40px;}
-.article .main_1 .about ul li:last-child{ line-height: 1.6; font-family: 'Pretendard'; font-weight: 500;  font-size: 1.1rem; margin-top: 15px;}
+.article .main_1 .about ul li:last-child{ line-height: 1.6; font-weight: 500;  font-size: 1.1rem; margin-top: 15px;}
 
 
 
@@ -41,19 +54,10 @@ img{vertical-align: top;}
 .article .main_2{background-color: #353535; height: 100vh; color: white; position: relative; text-align: right;}
 .article .main_2 .skill{position: absolute; top: 50%; left:50%;  transform: translate(-50%, -50%); z-index: 999;}
 .article .main_2 .skill h2{width:700px; position: relative; font-size: 2.5rem;  border-bottom: 2px solid white;}
-/*.article .main_2 .skill h2::before { content: ""; width:500px; height:2px; background-color: #fff; display: inline-block; vertical-align: middle; margin-right: 30px;}*/
-.article .main_2 .skill > ul{margin-top: 80px; font-size: 1.1rem;}
-.article .main_2 .skill > ul > li:first-child{margin-bottom: 80px;}
-.article .main_2 .skill ul li{margin-top: 10px; }
-.article .main_2 .skill > ul > li > ul >li:first-child{margin-top: 30px;}
-.article .main_2 .skill ul > li > ul > li{}
-.article .main_2 .skill ul li ul li .star{visibility: hidden; font-size: 14px; color: #ddd; margin-top: 10px; display: block; } 
-.article .main_2 .skill ul li ul li:nth-child(1):hover .star{visibility: visible;}
-.article .main_2 .skill ul li ul .design:hover .star{visibility: visible;}
-.article .main_2 .skill ul li ul .star3:hover .star{visibility: visible;}
-.article .main_2 .skill ul li ul .star4:hover .star{visibility: visible;}
-.article .main_2 .skill ul li ul .star5:hover .star{visibility: visible;}
-.article .main_2 .skill ul li ul .star6:hover .star{visibility: visible;}
+.article .main_2 .skill ul{}
+.article .main_2 .skill ul li{margin: 50px auto; font-size: 20px; letter-spacing: 2px;}
+.article .main_2 .skill ul li .star{font-size: 16px;display:inline-block; margin-top: 10px; color: rgb(192, 192, 192); letter-spacing: 0; width: 550px;}
+
 
 
 /* main 3 */
@@ -63,8 +67,8 @@ img{vertical-align: top;}
 .article .main_3 ul{  margin-top: 50px; }
 .article .main_3 ul li{color:whitesmoke; }
 .article .main_3 ul li h5{text-align: left; margin: 0; margin-top: 10px; }
-.article .main_3 ul li h3{margin: 0 auto; font-size: 1.7rem; color: white;}
-.article .main_3 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4;}
+.article .main_3 ul li h3{margin: 0 auto; font-size: 1.7rem; color: white; font-weight: 700;}
+.article .main_3 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4; letter-spacing: 1px;}
 .article .main_3 ul li:first-child{margin-bottom: 80px;}
 
 .article .main_3 ul li .glueon{width:700px; height: 400px; background: url(asset/images/glueon.png) no-repeat 50% / cover; display: inline-block; box-shadow:
@@ -83,8 +87,8 @@ img{vertical-align: top;}
 .article .main_6 .work2 h2{width:700px; position: relative; font-size: 2.5rem; border-bottom: 2px solid rgb(0, 0, 0); margin: 80px 0 20px; }
 .article .main_6 ul{  margin-top: 50px; }
 .article .main_6 ul li h5{ text-align: center;margin: 0; margin-top: -20px; margin-left: -20px;}
-.article .main_6 ul li h3{margin: 0 auto; font-size: 1.7rem; padding-top: 25px;}
-.article .main_6 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4;}
+.article .main_6 ul li h3{margin: 0 auto; font-size: 1.7rem; font-weight: 700; padding-top: 25px;}
+.article .main_6 ul li p{margin: 30px auto; font-size: 1.1rem; line-height: 1.4; letter-spacing: 1px;}
 .article .main_6 ul li:first-child{margin-bottom: 80px;}
 .article .main_6 ul li .website{width: 300px; height:650px; /*background: url(asset/images/website2-3.png) no-repeat 50% 0/ cover;*/ display: inline-block;box-shadow:
   1.9px 0.6px 4.6px rgba(0, 0, 0, 0.031),
@@ -103,7 +107,6 @@ img{vertical-align: top;}
 .article .main_4{background-color: #e0e1db; height: 100vh; position: relative;}
 .article .main_4 .project{width:700px; position: absolute; top: 50%; left:50%;  transform: translate(-50%, -50%); z-index: 999;}
 .article .main_4 .project h2{ position: relative; font-size: 2.5rem;  border-bottom: 2px solid black; text-align: right;}
-/*.article .main_4 .project h2::before { content: ""; width:370px; height:2px; background-color: #000; display: inline-block; vertical-align: middle; margin-right: 30px;}*/
 .article .main_4 ul{display: flex; justify-content: right; margin-top: 50px;}
 .article .main_4 ul li{width: 50%;}
 .article .main_4 ul li:first-child{font-size: 1.1rem; text-align: right; margin-right: 30px; margin-top: 80px; line-height: 1.5;}
@@ -113,7 +116,11 @@ img{vertical-align: top;}
 .article .main_4 ul li:first-child .second{margin: 10px auto;}
 .article .main_4 ul li:first-child .end{margin: 10px auto;}
 .article .main_4 ul li:first-child a:hover{background-color: rgba(0, 0, 0, 0.5);}
-.article .main_4 ul li em{display: block; margin-top:230px;}
+.article .main_4 ul .mockvideo{position: relative;}
+.article .main_4 ul .mockvideo .mockup{position: absolute; top: 0; left: 0; z-index: 99;}
+.article .main_4 ul .mockvideo .video{position: absolute; top:2px; left: 8px; z-index: 9;}
+
+
 
 /* main_5 */
 .article .main_5{background-color: #BFD2E0; height: 100vh; color:black; position: relative; text-align: center;}
