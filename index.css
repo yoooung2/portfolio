@@ -38,17 +38,17 @@ img{vertical-align: top;}
 .right_txt p::before { content: ""; width:50px; height:1px; background-color: #ddd; display: inline-block; vertical-align: middle; margin-right: 10px;}
 
 /* main_1 */
-.article .main_1{background-color: #b29492; height: 130vh; position: relative;}
+.article .main_1{background-color: #b29492; height: 130vh; position: relative; color: white;}
 
 .article .main_1 .about{ position: absolute; top: 65%; left:50%;  transform: translate(-50%, -50%); z-index: 999;}
-.article .main_1 .about h2{width:700px; position: relative; font-size: 2.5rem; text-align: right;  border-bottom: 2px solid black;}
+.article .main_1 .about h2{width:700px; position: relative; font-size: 2.5rem; text-align: right;  border-bottom: 2px solid white;}
 
 .article .main_1 .about ul{display: flex; justify-content: right; margin-top: 100px; }
 .article .main_1 .about ul li img{width: 400px; height: 400px; margin-right: 40px;}
-.article .main_1 .about ul li:last-child{ line-height: 1.6; font-weight: 500;  font-size: 1.1rem; margin-top: 15px;}
-.article .main_1 .about a{font-size: 22px;  text-align: right; color: black; text-decoration: none;}
+.article .main_1 .about ul li:last-child{width: 260px; line-height: 1.6; font-weight: 500;  font-size: 1.1rem; margin-top: 15px;}
+.article .main_1 .about a{padding: 10px; font-size: 22px;  text-align: right; color: white; text-decoration: none; }
 .article .main_1 .about a:hover{color: #7e4a46;}
-.article .main_1 .about .gopage{margin-top: 100px;}
+.article .main_1 .about .gopage{ margin-top: 100px;}
 
 
 
