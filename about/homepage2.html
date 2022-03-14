@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no">
+  <title>웹페이지2 설명페이지</title>
+  <link rel="shortcut icon" href="../asset/images/favicon.ico" type="image/x-icon">
+  <!--평준화 css-->
+  <link rel="stylesheet" href="../asset/common/normalize.css">
+  <link rel="stylesheet" href="../asset/common/aos.css">
+  <!-- 내가 만든 css -->
+  <link rel="stylesheet" href="homepage2.css">
+
+  <script src="../asset/common/jquery-3.6.0.min.js"></script>
+  <script src="../asset/common/jquery-ui.min.js"></script>
+  <script src="../asset/common/aos.js"></script>
+
+</head>
+<body>
+
+  <aside data-aos="fade-right" data-aos-delay="800">
+    <div >
+    <p data-aos="fade-right" data-aos-delay="1500">My portfolio</p>
+    <h1 id="first" data-aos="fade-up" data-aos-delay="1200">Explain</h1>
+    <h1 id="second" data-aos="fade-down" data-aos-delay="1200">ation</h1>
+  </div>
+  </aside>
+  <main data-aos="fade-right" data-aos-delay="500">
+  <article > 
+    <div class="content">
+    <div class="style">
+      <h2>Style</h2>
+        <ul class="circle">
+          <li><p>#Brightly</p></li>
+          <li><p>#Look full</p></li>
+        </ul>
+        <ul class="text">
+          <li>#쨍하게</li>
+          <li>#바로 알아볼 수 있게</li>
+          <li>#가득차게</li>
+        </ul>
+      </div>
+
+    <div class="font">
+      <h2>Font</h2>
+      <ul>
+        <li>Noto Sans KR</li>
+        <li><img src="../asset/images/notosanskr_2.png" alt="폰트"></li>
+      </ul>
+    </div>
+
+    <div class="color">
+      <h2>Color</h2>
+      <ul>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#e6e6e6</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#fd8200</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#6b3802</p>
+        </li>
+      </ul>
+      <p id="text"> 메인 색상으로 오렌지를 골라<br> 오렌지계열의 다른 색상을 <br> 사용해 통일감을 주며,<br> 밋밋해 보일 수 있는 홈페이지의 <br> 포인트 컬러로 사용하였다.</p>
+    </div>
+
+    <div class="realization">
+      <h2>Realization</h2>
+      <p>제가 만든 웹사이트는 홈페이지 구조를 모아놓은 사이트에서 하나를 골라 <br> 글루온이라는 광고,홍보사이트 내용을 넣은 홈페이지 입니다.</p>
+      <p>처음으로 혼자 만든 웹사이트이며, 투박한 면들이 보여 아쉬움이 많이 남지만,<br>배웠던 것들을 활용하여 혼자 만들었기에 뿌듯함도 느낀 홈페이지 입니다.</p>
+
+      <ul>
+        <li>
+          <h4> 홈페이지 안의 위치를 보일 수 있는 MAP을 넣고싶다. </h4>
+          <h4 class="solution">→ 카카오Developers 라는 사이트 내의 카카오맵 API를 사용하여 <br> 원하는 위치를 보일 수 있게 만들고 해결하였다.</h4>
+        </li>
+        <li>
+          <h4>메인화면 글씨가 튀어나온듯 3D효과를 주고 싶다.</h4>
+          <h4 class="solution">→ text-shadow값을 주어 그림자를 이용해 살짝 튀어나온 듯 효과를 주었다.</h4>
+        </li>
+      </ul>
+
+      <h1><a href="https://glueon-website.netlify.app" target="_blank">  홈페이지 보러가기 </a></h1>
+    </div>
+  </div>
+
+    
+    <p class="bottom">My portfolio</p>
+  </article>   
+</main>
+
+<div class="fix"  data-aos="fade-right" data-aos-delay="1500">
+  <div class="back">
+    <a href="../index.html#main_3"><p>포트폴리오 돌아가기</p></a>
+   </div>
+  </div>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

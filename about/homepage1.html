@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no">
+  <title>웹페이지1 설명페이지</title>
+  <link rel="shortcut icon" href="../asset/images/favicon.ico" type="image/x-icon">
+  <!--평준화 css-->
+  <link rel="stylesheet" href="../asset/common/normalize.css">
+  <link rel="stylesheet" href="../asset/common/aos.css">
+  <!-- 내가 만든 css -->
+  <link rel="stylesheet" href="homepage1.css">
+
+  <script src="../asset/common/jquery-3.6.0.min.js"></script>
+  <script src="../asset/common/jquery-ui.min.js"></script>
+  <script src="../asset/common/aos.js"></script>
+
+</head>
+<body>
+
+  <aside data-aos="fade-right" data-aos-delay="800">
+    <div >
+    <p data-aos="fade-right" data-aos-delay="1500">My portfolio</p>
+    <h1 id="first" data-aos="fade-up" data-aos-delay="1200">Explain</h1>
+    <h1 id="second" data-aos="fade-down" data-aos-delay="1200">ation</h1>
+  </div>
+  </aside>
+  <main data-aos="fade-right" data-aos-delay="500">
+  <article > 
+    <div class="content">
+    <div class="style">
+      <h2>Style</h2>
+        <ul class="circle">
+          <li><p>#Similarly</p></li>
+          <li><p>#Look good</p></li>
+        </ul>
+        <ul class="text">
+          <li>#비슷하게</li>
+          <li>#이쁘게</li>
+          <li>#보기좋게</li>
+        </ul>
+      </div>
+
+    <div class="font">
+      <h2>Font</h2>
+      <ul>
+        <li>Noto Sans KR</li>
+        <li><img src="../asset/images/notosanskr.png" alt="폰트"></li>
+      </ul>
+    </div>
+
+    <div class="color">
+      <h2>Color</h2>
+      <ul>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#eddfc9</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#f7f7f7</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#a3afa8</p>
+        </li>
+      </ul>
+      <p id="text"> 사진의 컬러와 비슷하게 사용하여<br>  통일감을 주며, 사진보다 채도가 낮은  <br>색상을 사용하여, 보기 편안하도록 하였다</p>
+    </div>
+
+    <div class="realization">
+      <h2>Realization</h2>
+      <p>제가 만든 반응형 웹사이트는 의류, 신발을 판매하는 컨버스 홈페이지의 구조를 따와서 <br>클레어스 라는 뷰티 홈페이지의 내용을 넣은 작업물 입니다.</p>
+      <p> 처음 만들어보는 반응형 웹사이트다 보니 중간중간 미숙한 부분들이 보여 아쉬움이 많이 남습니다. <br> 그래도 가장 최선을 다해 만들어서 애정이 많이 가는 홈페이지 입니다.</p>
+
+      <ul>
+        <li>
+          <h4> 신상품 보러가기 파트에 사진들을 ajax를 사용하여 홈페이지에 보이게 하고 싶다. </h4>
+          <h4 class="solution">→ json파일을 만들어 사진들의 경로와 이름을 작성해준 뒤 html파일 하단에 ajax를 작성하고 <br> json파일을 연결하여 홈페이지의 사진이 잘 보일 수 있도록 만들었다.</h4>
+        </li>
+        <li>
+          <h4>제품을 보여주는 파트에서 하트,카테고리,제품이름,가격,이미지를 원하는 위치에 놓고싶다.</h4>
+          <h4 class="solution">→ 위 모든 항목을 넣는 직사각형에 position:relative 값을 주고 각각 absolute로 원하는 자리에 <br> 위치할 수 있도록 조절한 뒤 다른 제품들도 모두 동일한 값을 주어 통일 하였다.</h4>
+        </li>
+        <li>
+          <h4>모바일 버전에서 신상품보러가기, 베스트상품 보러가기 부분을 옆으로 넘어가는 슬라이드를 주고 싶다.</h4>
+          <h4 class="solution">→ swiper API 를 사용하여 슬라이드효과를 적용하여 옆으로 넘어갈 수 있게 하였다.
+          </h4>
+        </li>
+        <li>
+          <h4>모바일 버전에서 메뉴아이콘을 누르면 메뉴가 나왔다가, X버튼을 누르면 다시 사라지게 하고 싶다.</h4>
+          <h4 class="solution">→ html에 모바일 용 메뉴를 만들어서 모바일에서만 보일 수 있게 값을 준 뒤 js로 버튼을 <br> 누르면 왼쪽에서 나타나고 다시 누르면 들어갈 수 있게 값을 주어 해결하였다. </h4>
+        </li>
+      </ul>
+
+      <h1><a href="https://reactive-website.netlify.app" target="_blank">  홈페이지 보러가기 </a></h1>
+    </div>
+  </div>
+
+    
+    <p class="bottom">My portfolio</p>
+  </article>   
+</main>
+
+<div class="fix"  data-aos="fade-right" data-aos-delay="1500">
+  <div class="back">
+    <a href="../index.html#main_6"><p>포트폴리오 돌아가기</p></a>
+   </div>
+  </div>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

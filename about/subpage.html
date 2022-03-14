@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no">
+  <title>설명페이지</title>
+  <link rel="shortcut icon" href="../asset/images/favicon.ico" type="image/x-icon">
+  <!--평준화 css-->
+  <link rel="stylesheet" href="../asset/common/normalize.css">
+  <link rel="stylesheet" href="../asset/common/aos.css">
+  <!-- 내가 만든 css -->
+  <link rel="stylesheet" href="subpage.css">
+
+  <script src="../asset/common/jquery-3.6.0.min.js"></script>
+  <script src="../asset/common/jquery-ui.min.js"></script>
+  <script src="../asset/common/aos.js"></script>
+
+</head>
+<body>
+
+  <aside data-aos="fade-right" data-aos-delay="800">
+    <div >
+    <p data-aos="fade-right" data-aos-delay="1500">My portfolio</p>
+    <h1 id="first" data-aos="fade-up" data-aos-delay="1200">Explain</h1>
+    <h1 id="second" data-aos="fade-down" data-aos-delay="1200">ation</h1>
+  </div>
+  </aside>
+  <main data-aos="fade-right" data-aos-delay="500">
+  <article > 
+    <div class="content">
+    <div class="style">
+      <h2>Style</h2>
+        <ul class="circle">
+          <li><p>#Clean</p></li>
+          <li><p>#Simple</p></li>
+        </ul>
+        <ul class="text">
+          <li>#깔끔한</li>
+          <li>#복잡하지 않고 이해하기 쉬운</li>
+          <li>#간단한</li>
+        </ul>
+      </div>
+
+    <div class="font">
+      <h2>Font</h2>
+      <ul>
+        <li>Pretendard</li>
+        <li><img src="../asset/images/pretendard.png" alt="폰트"></li>
+      </ul>
+    </div>
+
+    <div class="color">
+      <h2>Color</h2>
+      <ul>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#b29492</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#353535</p>
+        </li>
+        <li>
+          <div class="backcolor"></div>
+          <div class="line"></div>
+          <p>#c38270</p>
+        </li>
+      </ul>
+      <p id="text">전체적으로 채도가 낮은 색상을 <br> 사용하여 차분하며, 깔끔해 보이는 <br> 분위기로 보일 수 있게 하였다.</p>
+    </div>
+
+    <div class="realization">
+      <h2>Realization</h2>
+      <p>제가 포트폴리오를 만드는 목적은 취업이다 보니 무엇보다 보기에 깔끔하고 한 눈에 읽히게 만들었습니다. <br> 배운걸 활용해 제가 할 수 있는 최선을 다해 만들다 보니까 코드는 최대한 단순하지만 <br> 제가 원하는 방향으로 보일 수 있게 짰습니다. </p>
+      <p> position값이 여러개가 들어가 계속 이상하게 적용되었으나,묶는 값을 따로 여러개 주어 해결되었습니다. <br> 이 때문에 코드가 복잡해보여서 아쉬움이 남지만, 제가 원하는 대로 보이도록 결과물이 나왔으니 만족합니다.</p>
+
+      <ul>
+        <li>
+          <h4>seoyoung이 가운데 위치하고 제일 앞에 보이길 <br>
+            원하지만, 글씨에 반이 사라져서 안보인다. </h4>
+          <h4 class="solution">→ position으로 가운데로 갈 수 있게 해준 뒤 z-index 값을 주어 가장 앞에 보이게 해결하였다.</h4>
+        </li>
+        <li>
+          <h4>가운데 작성된 글자가 컨텐츠 위로 올라와 <br>
+            잘 안보이게 방해된다.</h4>
+          <h4 class="solution">→ 문서와 겹치는 영역에는 seoyoung이 겹치는영역보다 뒤로 갈수 있게 js문서에 if문을 작성하여 해결하였다.</h4>
+        </li>
+        <li>
+          <h4>슬라이드 효과를 주면 position값이 먹질 않아 곤란하다.</h4>
+          <h4 class="solution">→ swiper를 적용한 값을 position값이 정해져있는 큰 틀에서 벗어나게 해 적용될 수 있도록 하여 해결하였다.
+          </h4>
+        </li>
+        <li>
+          <h4>오른쪽 My portfolio가 위치가 고정되지 않고 사라진다. <br>
+            글씨를 가로가 아닌 세로정렬을 하고싶다. </h4>
+          <h4 class="solution">→ position :fixed 값을 주어 위치를 고정시켜주고,transform: rotate(-90deg) 값을 주어 세로정렬로 만들어 <br> 해결하였다.</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <p class="bottom">My portfolio</p>
+  </article>   
+</main>
+
+<div class="fix"  data-aos="fade-right" data-aos-delay="1500">
+  <div class="back">
+    <a href="../index.html"><p>포트폴리오 돌아가기</p></a>
+   </div>
+  </div>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
